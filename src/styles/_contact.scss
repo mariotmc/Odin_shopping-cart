@@ -1,0 +1,41 @@
+@use "functions" as *;
+@use "variables" as *;
+
+#contact-heading {
+  margin-bottom: rem(75);
+  font-size: rem(48);
+}
+
+#company-contacts {
+  margin-bottom: rem(50);
+
+  .company-contacts {
+    display: flex;
+    align-items: center;
+    height: rem(35);
+  }
+
+  .contact-icon {
+    width: rem(25);
+    height: rem(25);
+    margin-right: rem(10);
+  }
+}
+
+#contact-social-media {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: rem(50);
+  margin-bottom: rem(100);
+
+  .social-icon {
+    width: rem(50);
+    height: auto;
+    transition: all ease-in-out 200ms;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
