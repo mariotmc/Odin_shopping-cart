@@ -1,0 +1,70 @@
+@use "functions" as *;
+@use "variables" as *;
+
+header {
+  width: 100%;
+  padding: rem(30) rem(75);
+  background-color: var(--light-blue);
+  color: var(--white);
+  border-bottom: rem(3) solid var(--light-gold);
+
+  nav {
+    display: flex;
+    align-items: center;
+
+    #logo {
+      display: inline-block;
+      width: rem(75);
+      height: rem(75);
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    h1 {
+      margin: 0;
+      justify-content: flex-start;
+    }
+
+    ul {
+      display: flex;
+      align-items: center;
+      gap: rem(40);
+      margin-left: auto;
+      padding: 0;
+
+      li {
+        font-size: rem(18);
+        transition: all ease-in-out 200ms;
+
+        &:hover {
+          transform: scale(1.1);
+          color: var(--light-gold);
+        }
+      }
+
+      #cart-image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: rem(50);
+        height: rem(50);
+        background-color: var(--white);
+        border-radius: 50%;
+        cursor: pointer;
+        transition: background-color ease-in-out 200ms;
+
+        &:hover {
+          background-color: var(--light-gold);
+        }
+
+        #cart-image {
+          width: rem(25);
+          height: auto;
+        }
+      }
+    }
+  }
+}
