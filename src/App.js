@@ -20,9 +20,9 @@ function App() {
         <Header />
         <main>
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/shop" element={<Shop cart={cart} addToCart={addToCart} />} />
-            <Route path="/contact" element={<Contact />} />
+            <Route path="item-shop/" element={<Home />} />
+            <Route path="item-shop/shop" element={<Shop cart={cart} addToCart={addToCart} />} />
+            <Route path="item-shop/contact" element={<Contact />} />
           </Routes>
         </main>
       </BrowserRouter>

@@ -25,7 +25,7 @@ const Home = () => {
         </div>
         <img id="home-image" src={homeImage} alt="" />
       </div>
-      <Link to="/shop">
+      <Link to="/item-shop/shop">
         <button id="cta-button">SHOP NOW</button>
       </Link>
     </>
