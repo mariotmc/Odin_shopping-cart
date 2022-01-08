@@ -7,7 +7,7 @@ const Shop = (props) => {
   const addToCart = props.addToCart;
 
   const fetchItems = async () => {
-    const request = await fetch("http://ddragon.leagueoflegends.com/cdn/12.1.1/data/en_US/item.json");
+    const request = await fetch("https://ddragon.leagueoflegends.com/cdn/12.1.1/data/en_US/item.json");
     const response = await request.json();
     const items = await response.data;
     const convertedArray = Object.entries(items);
