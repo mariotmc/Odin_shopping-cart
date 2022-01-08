@@ -39,7 +39,7 @@ const Shop = (props) => {
                 <div key={element[0]} className="item">
                   <img
                     className="item-image"
-                    src={`http://ddragon.leagueoflegends.com/cdn/12.1.1/img/item/${element[1].image.full}`}
+                    src={`https://ddragon.leagueoflegends.com/cdn/12.1.1/img/item/${element[1].image.full}`}
                     alt="Item"
                   />
                   <h4 className="item-title">{element[1].name}</h4>
