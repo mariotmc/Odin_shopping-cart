@@ -1,11 +1,12 @@
-// FONTS
-:root {
-	--font-body: Arial, sans-serif;
-}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
-
-//COLOURS
 :root {
-	--white: hsl(0, 0%, 100%);
-	--black: hsl(0, 0%, 0%);
+  // FONTS
+  --font-body: "Poppins", sans-serif;
+  //COLOURS
+  --dark-blue: rgba(0, 13, 21, 255);
+  --light-blue: rgba(1, 49, 71, 255);
+  --white: rgb(255, 255, 255);
+  --dark-gold: rgb(102, 90, 67);
+  --light-gold: rgb(176, 144, 83);
 }
