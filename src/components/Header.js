@@ -3,7 +3,10 @@ import { Link } from "react-router-dom";
 import logo from "../media/logo.png";
 import cart from "../media/cart.png";
 
-const Header = () => {
+const Header = (props) => {
+  const handleCartVisibility = props.handleCartVisibility;
+  const CartCounter = props.CartCounter;
+
   return (
     <header>
       <nav>
@@ -23,10 +26,11 @@ const Header = () => {
             <li>Contact</li>
           </Link>
 
-          <li>
+          <li id="header-cart" onClick={handleCartVisibility}>
             <div id="cart-image-container">
               <img id="cart-image" src={cart} alt="Cart" />
             </div>
+            <CartCounter />
           </li>
         </ul>
       </nav>
