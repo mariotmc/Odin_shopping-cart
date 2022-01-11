@@ -1,0 +1,125 @@
+@use "functions" as *;
+@use "variables" as *;
+
+#cart {
+  display: flex;
+  flex-direction: column;
+  gap: rem(30);
+  align-items: center;
+  width: rem(435);
+  height: 100%;
+  padding: rem(50) rem(25) rem(25);
+  color: #333;
+  background-color: #fff;
+  transition: all 500ms ease-in-out 0s;
+  border-left: rem(3) solid var(--light-gold);
+  z-index: 2;
+
+  #cart-items {
+    width: 100%;
+    overflow: auto;
+
+    .cart-item {
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      height: auto;
+      margin-bottom: rem(20);
+
+      .cart-item-image {
+        width: rem(95);
+        height: rem(95);
+
+        img {
+          height: 100%;
+          border: rem(2) solid var(--light-gold);
+        }
+      }
+
+      .cart-item-info {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 65%;
+        gap: rem(10);
+
+        .cart-item-name {
+          font-weight: 600;
+        }
+
+        .cart-item-price {
+          display: flex;
+          justify-content: center;
+          gap: rem(5);
+
+          img {
+            width: rem(22.5);
+            height: rem(22.5);
+          }
+        }
+
+        p {
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  #cart-total {
+    font-size: rem(20);
+    font-weight: 700;
+  }
+
+  .button {
+    width: 100%;
+    padding: rem(15) rem(20);
+    font-size: rem(20);
+    font-weight: 700;
+    color: #333;
+    border: none;
+    cursor: pointer;
+  }
+
+  #checkout-button {
+    background-color: rgb(70, 255, 211);
+
+    &:hover {
+      background-color: rgb(53, 238, 194);
+    }
+  }
+
+  #empty-cart-button {
+    background-color: rgb(255, 153, 153);
+
+    &:hover {
+      background-color: rgb(238, 136, 136);
+    }
+  }
+
+  a {
+    width: 100%;
+  }
+
+  .quantity-button {
+    width: rem(25);
+    height: rem(25);
+    font-weight: 700;
+    background-color: #e5e5e5;
+    color: #333;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+.cart-hidden {
+  position: fixed;
+  right: -435px;
+  top: 0;
+  overflow: hidden;
+}
+
+.cart-visible {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
