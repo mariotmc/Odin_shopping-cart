@@ -39,10 +39,28 @@ li {
 }
 
 main {
+  padding: rem(50);
+  color: var(--white);
+}
+
+.transition-animation-div {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: rem(50);
-  color: var(--white);
+  margin-top: rem(125);
+}
+
+body::-webkit-scrollbar {
+  width: rem(10);
+  height: rem(10);
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--light-gold);
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: rem(10);
+  background: #e5e5e5;
 }
