@@ -9,7 +9,7 @@
   width: rem(435);
   height: 100%;
   padding: rem(50) rem(25) rem(25);
-  color: #333;
+  color: var(--dark-grey);
   background-color: #fff;
   transition: all 500ms ease-in-out 0s;
   border-left: rem(3) solid var(--light-gold);
@@ -72,27 +72,50 @@
 
   .button {
     width: 100%;
-    padding: rem(15) rem(20);
+    padding: rem(12) rem(17);
+    font-family: var(--font-body);
     font-size: rem(20);
     font-weight: 700;
-    color: #333;
+    color: var(--dark-grey);
     border: none;
+    border-radius: rem(2);
     cursor: pointer;
   }
 
   #checkout-button {
-    background-color: rgb(70, 255, 211);
+    background-color: var(--light-green);
 
     &:hover {
-      background-color: rgb(53, 238, 194);
+      background-color: var(--dark-green);
     }
   }
 
   #empty-cart-button {
-    background-color: rgb(255, 153, 153);
+    background-color: var(--light-red);
 
     &:hover {
-      background-color: rgb(238, 136, 136);
+      background-color: var(--dark-red);
+    }
+  }
+
+  #close-cart-button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: rem(40);
+    height: rem(40);
+    padding: 0;
+    color: var(--white);
+    background-color: var(--dark-red);
+    font-family: var(--font-body);
+    font-size: rem(25);
+    font-weight: 700;
+    border: transparent;
+    border-radius: rem(1);
+    cursor: pointer;
+
+    &:hover {
+      filter: brightness(95%);
     }
   }
 
@@ -104,10 +127,26 @@
     width: rem(25);
     height: rem(25);
     font-weight: 700;
-    background-color: #e5e5e5;
-    color: #333;
+    background-color: var(--off-white);
+    color: var(--dark-grey);
     border: none;
+    border-radius: rem(2);
     cursor: pointer;
+  }
+
+  ::-webkit-scrollbar {
+    width: rem(10);
+    height: rem(10);
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--dark-grey);
+    border-radius: rem(10);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--off-white);
+    border-radius: rem(10);
   }
 }
 
