@@ -70,9 +70,7 @@ const Cart = (props) => {
           <button id="empty-cart-button" className="button" onClick={emptyCart}>
             Empty Cart
           </button>
-          <button id="close-cart-button" className="button">
-            Close
-          </button>
+          <button id="close-cart-button">X</button>
         </div>
       </motion.div>
     </>
